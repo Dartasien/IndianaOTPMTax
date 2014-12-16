@@ -26,7 +26,6 @@ namespace IndianaOPTMForms.Models
         }
 
         private ObservableCollection<ScheduleItem> _scheduleItems;
-
         public ObservableCollection<ScheduleItem> ScheduleItems
         {
             get { return _scheduleItems; }
@@ -34,7 +33,6 @@ namespace IndianaOPTMForms.Models
         }
 
         private CurrentCompany _companyinfo;
-
         public CurrentCompany CompanyInfo
         {
             get { return _companyinfo; }
@@ -54,6 +52,7 @@ namespace IndianaOPTMForms.Models
                 LoadData("companyinfo.xml", 0);
                 LoadData("ordercompanies.xml", 1);
                 LoadData("schedules.xml", 2);
+                IsDataLoaded = true;
             }
         }
 
@@ -99,6 +98,33 @@ namespace IndianaOPTMForms.Models
                         Schedules = new ObservableCollection<Schedule>();
                         break;
                 }
+            }
+        }
+
+        public void WriteData(string fileName, int version)
+        {
+            XmlSerializer ser;
+            StreamWriter fileStream;
+            switch (version)
+            {
+                case 0:
+                    ser = new XmlSerializer(typeof(CurrentCompany));
+                    fileStream = new StreamWriter(fileName);
+                    ser.Serialize(fileStream, CompanyInfo);
+                    fileStream.Close();
+                    break;
+                case 1:
+                    ser = new XmlSerializer(typeof(ObservableCollection<OrderCompany>));
+                    fileStream = new StreamWriter(fileName);
+                    ser.Serialize(fileStream, OrderCompanies);
+                    fileStream.Close();
+                    break;
+                case 2:
+                    ser = new XmlSerializer(typeof(Schedule));
+                    fileStream = new StreamWriter(fileName);
+                    ser.Serialize(fileStream, Schedules);
+                    fileStream.Close();
+                    break;
             }
         }
     }

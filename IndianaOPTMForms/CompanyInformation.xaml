@@ -16,6 +16,7 @@
                    VerticalAlignment="Top" 
                    Width="150"/>
         <TextBox x:Name="CompanyNameBox" 
+                 Text="{Binding CompanyName}"
                  HorizontalAlignment="Left" 
                  Height="23" 
                  Margin="10,30,0,0" 
@@ -27,7 +28,8 @@
                    TextWrapping="Wrap" 
                    Text="Company Address" 
                    VerticalAlignment="Top"/>
-        <TextBox x:Name="CompanyAddressBox" 
+        <TextBox x:Name="CompanyAddressBox"
+                 Text="{Binding Address}"
                  HorizontalAlignment="Left" 
                  Height="23" 
                  Margin="10,85,0,0" 
@@ -39,7 +41,8 @@
                    TextWrapping="Wrap" 
                    Text="Company Address" 
                    VerticalAlignment="Top"/>
-        <TextBox x:Name="CompanyCityBox" 
+        <TextBox x:Name="CompanyCityBox"
+                 Text ="{Binding City}"
                  HorizontalAlignment="Left" 
                  Height="23" 
                  Margin="10,140,0,0" 
@@ -51,7 +54,8 @@
                    TextWrapping="Wrap" 
                    Text="State" 
                    VerticalAlignment="Top"/>
-        <TextBox x:Name="CompanyStateBox" 
+        <TextBox x:Name="CompanyStateBox"
+                 Text="{Binding State}"
                  HorizontalAlignment="Left" 
                  Height="23" 
                  Margin="10,195,0,0" 
@@ -63,7 +67,8 @@
                    TextWrapping="Wrap" 
                    Text="Zip" 
                    VerticalAlignment="Top"/>
-        <TextBox x:Name="ZipCodeBox" 
+        <TextBox x:Name="ZipCodeBox"
+                 Text="{Binding Zip}"
                  HorizontalAlignment="Left" 
                  Height="23" 
                  Margin="100,195,0,0" 
@@ -75,7 +80,8 @@
                    TextWrapping="Wrap" 
                    Text="LOC" 
                    VerticalAlignment="Top"/>
-        <TextBox x:Name="LocCodeBox" 
+        <TextBox x:Name="LocCodeBox"
+                 Text="{Binding LocationNumber}"
                  HorizontalAlignment="Left" 
                  Height="23" 
                  Margin="190,195,0,0" 
@@ -87,7 +93,8 @@
                    TextWrapping="Wrap" 
                    Text="State Tax ID" 
                    VerticalAlignment="Top"/>
-        <TextBox x:Name="StateTaxIDBox" 
+        <TextBox x:Name="StateTaxIDBox"
+                 Text="{Binding StateTaxId}"
                  HorizontalAlignment="Left" 
                  Height="23" 
                  Margin="10,250,0,0" 
@@ -99,7 +106,8 @@
                    TextWrapping="Wrap" 
                    Text="Federal Tax ID" 
                    VerticalAlignment="Top"/>
-        <TextBox x:Name="FedTaxIDBox" 
+        <TextBox x:Name="FedTaxIDBox"
+                 Text="{Binding FedTaxId}"
                  HorizontalAlignment="Left" 
                  Height="23" 
                  Margin="10,305,0,0" 
@@ -111,7 +119,8 @@
                    TextWrapping="Wrap" 
                    Text="Company Email Address" 
                    VerticalAlignment="Top"/>
-        <TextBox x:Name="CompanyEmailBox" 
+        <TextBox x:Name="CompanyEmailBox"
+                 Text="{Binding EmailAddress}"
                  HorizontalAlignment="Left" 
                  Height="23" 
                  Margin="10,365,0,0" 
@@ -123,7 +132,8 @@
                    TextWrapping="Wrap" 
                    Text="Company Vendor Code" 
                    VerticalAlignment="Top"/>
-        <TextBox x:Name="CompanyVendorCodeBox" 
+        <TextBox x:Name="CompanyVendorCodeBox"
+                 Text="{Binding VendorCode}"
                  HorizontalAlignment="Left" 
                  Height="23" 
                  Margin="10,420,0,0" 
@@ -135,7 +145,8 @@
                    TextWrapping="Wrap" 
                    Text="Preparer Name" 
                    VerticalAlignment="Top"/>
-        <TextBox x:Name="PreparerNameBox" 
+        <TextBox x:Name="PreparerNameBox"
+                 Text="{Binding PreparerName}"
                  HorizontalAlignment="Left" 
                  Height="23" 
                  Margin="375,30,0,0" 
@@ -147,7 +158,8 @@
                    TextWrapping="Wrap" 
                    Text="Preparer Phone Number" 
                    VerticalAlignment="Top"/>
-        <TextBox x:Name="PreparerPhoneNumberBox" 
+        <TextBox x:Name="PreparerPhoneNumberBox"
+                 Text="{Binding PreparerPhoneNumber}"
                  HorizontalAlignment="Left" 
                  Height="23" 
                  Margin="375,85,0,0" 
@@ -159,7 +171,8 @@
                    TextWrapping="Wrap" 
                    Text="Preparer Email Address" 
                    VerticalAlignment="Top"/>
-        <TextBox x:Name="PreparerEmailAddressBox" 
+        <TextBox x:Name="PreparerEmailAddressBox"
+                 Text="{Binding EmailAddress}"
                  HorizontalAlignment="Left" 
                  Height="23" 
                  Margin="375,140,0,0" 
